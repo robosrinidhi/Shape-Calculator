@@ -1,3 +1,85 @@
-img{
-    width: 100vw;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 4rem;
+}
+
+header img{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container{
+    width: 85%;
+    display: flex;
+}
+.container .text-content{
+    width: 60%;
+    padding-right: 4rem;
+}
+
+.text-content h3{
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.text-content .description{
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.text-content .story{
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.calculator{
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 40%;
+    height: fit-content;
+    min-width: 300px;
+    padding: 30px;
+}
+aside{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advertisement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 100%;
+    background-color: gray;
+}
+aside .advertisement p{
+    color: white;
+    font-size: 1rem;
+}
+
+.inputs .input{
+    display: block;
+    margin: 0.6rem 0;
+}
+#step-1 .inputs .input label{
+    cursor: pointer;
+}
+.inputs .input label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.buttons{
+    margin-top: 0.5rem;
 }
