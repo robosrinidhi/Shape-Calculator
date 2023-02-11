@@ -1,10 +1,10 @@
 const step1 = document.querySelector('#step-1');
 const step2 = document.querySelector('#step-2');
 const step3 = document.querySelector('#step-3');
-const rectangle = document.querySelector('#rectangle');
-const square = document.querySelector('#square');
-const circle = document.querySelector('#circle');
-const ellipse = document.querySelector('#ellipse');
+const rectangle = document.querySelector('.rectangle');
+const square = document.querySelector('.square');
+const circle = document.querySelector('.circle');
+const ellipse = document.querySelector('.ellipse');
 
 step1.style.display = 'flex';
 rectangle.style.display = 'none';
@@ -12,14 +12,14 @@ square.style.display = 'none';
 circle.style.display = 'none';
 ellipse.style.display = 'none';
 
-let selectedShape = document.querySelector('input[name="shape"]:checked').value;
+let selectedShape = document.querySelector('input[name="shape"]:checked').value;;
 let result = 0;
 
-const handleShapeChange = ()=>{
+function handleShapeChange() {
     selectedShape = document.querySelector('input[name="shape"]:checked').value;
     step1.style.display = 'none';
     document.querySelector('#step-2-shape').textContent = selectedShape;
-    document.querySelector(`#${selectedShape}`).style.display = 'block';
+    document.querySelector(`.${selectedShape}`).style.display = 'block';
     step2.style.display = 'flex';
 };
 
