@@ -70,6 +70,33 @@ aside .advertisement p{
     font-size: 1rem;
 }
 
+.calculator .step-container {
+    padding: 1rem 2rem;
+    display: none;
+    flex-direction: column;
+}
+.calculator .step-container h2{
+    margin: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.calculator .step-container .desc{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+}
+
+#step-2-shape{
+    font-weight: bold;
+}
+#step-3-shape{
+    font-weight: bold;
+}
+.calculator .step-container .inputs {
+    margin: 1rem;
+}
+
 .inputs .input{
     display: block;
     margin: 0.6rem 0;
@@ -84,3 +111,123 @@ aside .advertisement p{
 .buttons{
     margin-top: 0.5rem;
 }
+
+.buttons submit {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+
+.buttons span{
+    font-weight: bold;
+}
+
+.buttons .cancel{
+    margin: 0 0.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.buttons span{
+    font-weight: bold;
+}
+.buttons .cancel{
+    margin: 0 0.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+#step-2 label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+input[type='number']{
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-apperance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    body {
+      padding: 0 3rem;
+    }
+  
+    .shape-calc-container .text-wrapper {
+      padding-right: 2rem;
+      width: 50%;
+    }
+}
+  
+@media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .shape-calc-container {
+      width: 100%;
+    }
+  
+    .shape-calc-container .text-wrapper {
+      padding-right: 2rem;
+      width: 60%;
+    }
+  
+    aside {
+      display: none;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    body {
+      font-size: 14px;
+    }
+    .shape-calc-container {
+      flex-direction: column;
+    }
+    .shape-calc-container .text-wrapper {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .calculator {
+      width: 100%;
+    }
+  
+    aside {
+      display: flex;
+      height: 240px;
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    body {
+      padding: 0 1rem;
+      font-size: 12px;
+    }
+  
+    main {
+      padding: 2rem 1rem;
+    }
+  
+    .calculator {
+      min-width: 250px;
+    }
+  }
