@@ -59,7 +59,79 @@
                             <input type="radio" name="shape" value="ellipse"/>
                         </div>
                     </div>
+                    <div class="buttons">
+                        <button class="submit" onclick="handleShapeChange()">
+                            Go to Step 2
+                        </button>
+                        <span>Or</span>
+                        <button class="cancel">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+                <div id="step-2" class="step-container">
+                    <h2>Step 2: Insert your values</h2>
+                    <p class="desc">
+                        You have selected a 
+                        <span id="step-2-shape"></span>, Please input the required variables
+                    </p>
+                    <div class="inputs">
+                        <div class="rectangle">
+                            <div class="input">
+                                <label for="length">Length: </label>
+                                <input type="number" id="length" name="length" value="0"/>
+                            </div>
+                            <div class="input">
+                                <label for="breadth">Breadth: </label>
+                                <input type="number" id="breadth" name="breadth" value="0"/>
+                            </div>
+                        </div>
+                        <div class="circle">
+                            <div class="input">
+                                <label for="circle">Radius: </label>
+                                <input type="number" id="radius" name="radius" value="0"/>
+                            </div>
+                        </div>
+                        <div class="square">
+                            <div class="input">
+                                    <label for="square">Side: </label>
+                                    <input type="number" id="side" name="side" value="0"/>
+                            </div>
+                        </div>
+                        <div class="ellipse">
+                            <div class="input">
+                                <label for="ellipse">Major axis:</label>
+                                <input type="number" id="major-axis" value="0"/>
+                            </div>
+                            <div class="input">
+                                <label for="ellipse">Minor axis:</label>
+                                <input type="number" id="minor-axis" value="0"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="calculateArea()" class="submit">Go to step 3</button>
+                        <span>or</span>
+                        <button class="cancel" onclick="location.reload()">Cancel</button>
+                    </div>
+                </div>
+                <div id="step-3" class="step-container">
+                    <h2>
+                        Step 3: Your results
+                    </h2>
+                    <p>
+                        You have selected a <span id="step-3-shape"></span> with <span id="x"></span><span id="y"></span>.
+                        Below is your result:
 
+                    </p>
+                    <div class="inputs">
+                        <h1 id="result"></h1>
+                    </div>
+                    <div class="buttons">
+                        <button class="submit" onclick="location.reload()">
+                            Start over
+                        </button>
+                    </div>
                 </div>
             </section>
         </div>
